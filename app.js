@@ -2,6 +2,7 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var RandomString = require('randomstring')
 var nodemailer = require('nodemailer')
+var logger = require('morgan')
 var smtpPool = require('nodemailer-smtp-pool')
 var db = require('./database/mongo')
 var app = express()
@@ -10,6 +11,7 @@ var PORT = process.env.PORT || 3000
 app.use(bodyParser.urlencoded({
     extended : false
 }))
+app.use(logger('dev'))
 
 app.listen(PORT, ()=>{
     console.log('Server Running At '+PORT+' Port!')
