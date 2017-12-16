@@ -1,0 +1,19 @@
+{
+  "name": "14th_appjam_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "nodemailer": "^4.4.1",
+    "nodemailer-smtp-pool": "^2.8.3",
+    "randomstring": "^1.1.5"
+  }
+}
